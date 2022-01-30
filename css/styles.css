@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+     font-family: "Trirong", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+
+    
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+
+    
+
+}
+
+.services {
+       margin-top: -10px;
+}
+
+	.grid-item-2{
+			align-items: center;
+			margin-left:35%;
+		}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>HoCo Foods</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/themes/cw_theme.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  <!-- default version -->
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.rating-stars.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+  <style>
+	.rating-stars {
+		width: 100%;
+		text-align: center;
+	}
+
+	.rating-stars .rating-stars-container {
+		font-size: 0px;
+	}
+
+	.rating-stars .rating-stars-container .rating-star {
+		display: inline-block;
+		font-size: 32px;
+		color: #555555;
+		cursor: pointer;
+		padding: 5px 10px;
+	}
+
+	.rating-stars .rating-stars-container .rating-star.is--active,
+	.rating-stars .rating-stars-container .rating-star.is--hover {
+		color: #f1c40f;
+	}
+
+	.rating-stars .rating-stars-container .rating-star.is--no-hover {
+		color: #555555;
+	}
+  </style>
+</head>
+<body>
+	<!-- COMMENT PAGE-->
+	<div data-role="page" id="comment">
+		<div data-role="header">
+			<a data-rel="back" style="font-family:Trirong;">Back</a>
+			<h2 style="font-size:35px;">HoCo</h2>
+		</div>
+		
+		<div role="main" class="ui-content">
+			<p style="text-align: center;font-size:30px;"><i>Hoco Home Delivery Reviews</i></p><br>
+			<p style="text-align: center;font-size:30px;" class="ratingtext"></p><br>
+			<div data-role="header" style="overflow:hidden;background-color:#6D49C0;">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#comment" button id="c1" data-transition="flip"style="font-family:Trirong;background-color:#6D49C0;font-size:22px;">Write Comments</a></li>
+						<li><a href="#rcomment" button id="rc1" data-transition="flip"style="font-family:Trirong;background-color:#6D49C0;font-size:22px;">Read Reviews</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="content"style="overflow:hidden;background-color:#6D49C0;">
+				<div class="rating-stars block" id="rating">
+					<input type="number" readonly class="form-control rating-value" name="rating-stars-value" id="rating-stars-value" style="color: black;">
+					<div class="rating-stars-container">
+						<div class="rating-star">
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="rating-star">
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="rating-star">
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="rating-star">
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="rating-star">
+							<i class="fa fa-star"></i>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div data-role="content"style="overflow:hidden;background-color:#6D49C0;">
+				<p style="text-align: center;font-size:30px;"><i>Tell us how Hoco Home Delivery made you feel?</i></p><br>
+				<div class="ui-field-contain">
+					
+					<textarea name="addinfo" id="info" placeholder="Maximum 200 characters" ></textarea>
+					<a href="#" button id="sendcomment" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#5125B7;">Submit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- COMMENT PAGE END -->
+	
+	<!-- READ COMMENTS -->
+	<div data-role="page" id="rcomment">
+		<div data-role="header">
+			<a data-rel="back" style="font-family:Trirong;">Back</a>
+			<h2 style="font-size:35px;">HoCo</h2>
+		</div>	
+		<div role="main" class="ui-content" id="commentcontainer">
+			<div data-role="header" style="background-color:#6D49C0;">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#comment" button id="c2" data-transition="flip"style="font-family:Trirong;background-color:#6D49C0;font-size:22px;">Write Comment</a></li>
+						<li><a href="#rcomment" button id="rc2" data-transition="flip"style="font-family:Trirong;background-color:#6D49C0;font-size:22px;">Read Reviews</a></li>
+					</ul>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- READ COMMENTS END -->
+	
+    <script type="text/javascript" src="js/jquery.rating-stars.js"></script>
+    <script type="text/javascript">
+        var ratingOptions = {
+            selectors: {
+                starsSelector: '.rating-stars',
+                starSelector: '.rating-star',
+                starActiveClass: 'is--active',
+                starHoverClass: 'is--hover',
+                starNoHoverClass: 'is--no-hover',
+                targetFormElementSelector: '.rating-value'
+            }
+        };
+        $(".rating-stars").ratingStars(ratingOptions);
+    </script>	
+	<script type="text/javascript" src="js/comments.js"></script>
+	<script type="text/javascript" src="js/read_comments.js"></script>
+	<script>
+		  $(document).on('pagecreate',function(evt){
+			  $("#sendcomment").on("tap",function(e){
+				  function p(s){
+					  return s < 10? '0'+ s: s;
+				  }
+				  var myDate = new Date;
+				  var year = myDate.getFullYear();
+				  var month = p(myDate.getMonth()+1);
+				  var day = p(myDate.getDate());
+				  var starnum = $("#rating-stars-value").val().length>0?$("#rating-stars-value").val():"1";
+				  var ctext = $("#info").val();
+				  if(ctext.length>0){
+					  var newdict = {
+						  "name":"anonymous",
+						  "stars":starnum,
+						  "date": year+"-"+month+"-"+day,
+						  "contents":ctext
+					  };
+					  totals["comments"].push(newdict);
+					  ratingarr.push(parseInt(starnum));
+					  
+					  var sum = 0;
+					  ratingarr.forEach(function(e){
+						 sum+=e; 
+					  });
+					  sum = sum/ratingarr.length;
+					  var f = Math.round(sum*10)/10;
+					  var s = f.toString();
+					  var rs = s.indexOf('.');
+					  if(rs<0){
+						  rs = s.length;
+						  s+='.';
+					  }
+					  while(s.length<=rs+1){
+						  s+='0';
+					  }
+					  $(".ratingtext").html('<i><u><b><font color="yellow">'+s+'</font></b></u> Rating <i><u><b><font color="yellow">'+ratingarr.length+'</font></b></u> Reviews</i>');
+					  
+					  $("#info").val("");
+					  $(".rating-value").val("")
+					  alert("Comment sent!");  
+				  }
+			  });
+		  })
+		  $("#rc1").on("tap",read_);
+		  $("#rc2").on("tap",read_);
+		  $(document).ready(function(){
+			  var sum = 0;
+			  ratingarr.forEach(function(e){
+				 sum+=e; 
+			  });
+			  sum = sum/ratingarr.length;
+			  var f = Math.round(sum*10)/10;
+			  var s = f.toString();
+			  var rs = s.indexOf('.');
+			  if(rs<0){
+				  rs = s.length;
+				  s+='.';
+			  }
+			  while(s.length<=rs+1){
+				  s+='0';
+			  }
+			  $(".ratingtext").html('<i><u><b><font color="yellow">'+s+'</font></b></u> Rating <i><u><b><font color="yellow">'+ratingarr.length+'</font></b></u> Reviews</i>');
+		  });
+		  
+	</script>
+</body>
+</html>

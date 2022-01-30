@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>HoCo Foods</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <link rel="stylesheet" href="css/themes/cw_theme.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+  
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+  
+
+  
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+	  <script>
+		
+		
+        $(document).on('pagecreate', function (evt) {
+            $("#send").on("click", function (e) {
+                alert("Message sent!");
+			}); 
+            
+		});
+		
+		 $(document).on('pagecreate', function (evt) {
+            $("#addbasket").on("click", function (e) {
+                alert("Added to basket!");
+			});  
+			});
+	 $(document).on('pagecreate', function (evt) {
+            $("#addbasket2").on("click", function (e) {
+                alert("Added to basket!");
+			});  
+			});
+
+			 $(document).on('pagecreate', function (evt) {
+            $("#addbasket3").on("click", function (e) {
+                alert("Added to basket!");
+			});  
+			});
+			
+			 $(document).on('pagecreate', function (evt) {
+            $("#Payment").on("click", function (e) {
+                window.open("payment.html")
+			});  
+			});
+			
+
+			
+	
+
+    </script>
+
+</head>
+<body>
+
+<!-- START INTRODUCTION PAGE -->
+	<div data-role="page" id="Intro"> 
+	<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		<h1>HoCo Fresh Foods</h1>
+	</div>
+	
+	
+	<div role="main" class="ui-content">
+		
+		<img src="images/logotr.png" style="padding-left:40px;width:400px;" >
+		<br>
+	<p style="text-align: center;font-size:17px;"><i>Home cooked food for everyone by everyone</i></p>
+	<br>
+	<p style="text-align: center;font-size:20px;">Join milions of neighbors all over the world who are using HoCo to offer their home cooked meals or order fresh homemade meals!</p>
+
+	<br>
+	<br>
+	<p style="text-align: center;font-size:20px;">
+No matter what you need: We connect neighbors in search of delicious meals with those who offer it! From Crème brûlée to detox smoothies, you will find everything. Whether you want to offer your home cooked meals or just simply order them, it’s up to you. </p>
+	<br>
+	<p style="text-align: center;font-size:20px;color:#F72585">Get coins by ordering, commenting or rating and  swap them for shopping vouchers! </p>
+
+	<br>
+	<p style="text-align: center;font-size:20px;color:#F72585">Want to know more? </p>
+
+	<br>
+	<p style="text-align: center;font-size:25px;">Join today!</p>
+
+<!-- BUTTONS ON INTRODUCTION PAGE -->
+<a href="#Page1" data-transition="flip"class="ui-btn ui-shadow"style="font-family:Trirong;">Proceed without Login</a>
+<br>
+<a href="#Page3" class="ui-btn ui-shadow"style="font-family:Trirong;">Login</button>
+<a href="#Page4" class="ui-btn ui-shadow "style="font-family:Trirong;">Register</a>
+<a href="comments.html" class="ui-btn ui-shadow "style="font-family:Trirong;" target="_blank">Comment us</a>
+<a href="qr.html" class="ui-btn ui-shadow "style="font-family:Trirong;" target="_blank">QR</a>
+<a href="ar.html" class="ui-btn ui-shadow "style="font-family:Trirong;" target="_blank">AR</a>
+
+
+
+<br><br><br>
+<div data-role="header" style="overflow:hidden;background-color:#6D49C0;" >
+
+    
+    <div data-role="navbar">
+
+        <ul>
+            <li><a href="" style="font-family:Trirong;background-color:#6D49C0;font-size:22px;">Learn More</a><p style="padding-left: 60px;">Company</p><p style="padding-left: 60px;">Careers</p><p style="padding-left: 60px;">News</p></li>
+
+            <li><a href="#" style="font-family:Trirong;background-color:#6D49C0;font-size:22px;">About</a><p style="padding-left: 60px;">FAQ</p><p style="padding-left: 60px;">Contact Us</p></li>
+ <li><a href="#" style="bottom:29px;font-family:Trirong;background-color:#6D49C0;font-size:22px;">Services</a>
+<p class="services" style="padding-left: 60px;margin-bottom: 30px;">Sales</p><p class="services" style="padding-left: 60px;">Support</p><p class="services" style="padding-left: 60px;margin-bottom:-100px;">Marketing</p></li>
+        </ul>
+    </div><!-- /navbar -->
+</div><!-- /header -->
+	</div> 
+    </div> 
+	</div>
+	</div>
+<!-- END  INTRODUCTION PAGE -->
+
+
+
+
+
+
+<!-- START OF HOME PAGE-->	
+
+	<div data-role="page" id="Page1"> 
+	<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		<h2 style="font-size:35px;">HoCo</h2>
+			
+	</div>
+	
+	<div role="main" class="ui-content">
+		
+	<!--- NAVBAR -->
+    <div data-role="footer" data-position="fixed">
+			
+	<nav data-role="navbar">
+      <ul>
+       <li><a href="#Page1" style="font-family:Trirong;"class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+       <li><a href="#" style="font-family:Trirong;"class="ui-btn ui-icon-location ui-btn-icon-top" target="_blank">Map</a></li>
+	   <li><a href="#" style="font-family:Trirong;" class="ui-btn ui-icon-user ui-btn-icon-top">Profile</a></li>
+	   <li><a href="#Intro" data-transition="flip"style="font-family:Trirong;" class="ui-btn ui-icon-info ui-btn-icon-top">Intro</a></li>
+	   
+     </ul>
+     </nav>		
+	</div>
+	</div>
+	<!--- END NAVBAR -->
+
+	<div role="main" class="ui-content">
+	
+	<h1>Good evening, Elaine!</h1> 
+
+	<h2>Browse our food categories</h2>
+
+		<!--- collapsible 1-->
+		<ul data-role="listview" data-filter="true"style="font-family:Trirong;" data-filter-placeholder="Browse dishes..." data-inset="true" >
+		
+	<div data-role="collapsible" data-collapsed="true">		          
+    <h4>Fast Food</h4>
+    <ul data-role="listview">
+            <li><a href="#Burger">
+					<img src="images/burger.jpg" style="size:30px;" class="ui-li-thumb">
+					
+					<h4>Beef Cheese Burger</h4>			
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Laila Sweeney</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£8.59</p>
+					
+			
+					</a>
+					<a href="#"></a>
+				</li>
+             <li><a href="#Hotdog">
+					<img src="images/hotdog.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h3>Truffle Hot Dog</h3>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by LenJen</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£6.29</p>
+					
+					</a>
+					<a href="#"></a>
+				</li>  
+				   <li><a href="#Pizza">
+					<img src="images/pizza.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Classic Pizza</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by MattK</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£7.59</p>
+					
+					</a>
+					<a href="#"></a>
+				</li>
+    </ul>
+	</div>
+
+
+	<!--- collapsible 2-->
+	<div data-role="collapsible" data-collapsed="true">
+    <h4>Asian</h4>
+    <ul data-role="listview">
+        <li><a href="#">
+					<img src="images/ramen1.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Fresh Ramen by John</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by JohnJohnny</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£10.65</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/ramen2.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Ramen Wok</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Del L.</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£5.59</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/ramen3.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Ramen Shrimp Mix</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Lewis & Ray</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£10.29</p>
+					</a>
+					<a href="#"></a>
+				</li>
+    </ul>
+	</div>
+
+
+	<!--- collapsible 3-->
+
+	<div data-role="collapsible" data-collapsed="true">
+    <h4>Vegan</h4>
+    <ul data-role="listview">
+    <li><a href="#">
+					<img src="images/vegan1.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Edamame Salad</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Lewis & Ray</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£8.59</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/vegan2.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Vegan Wonder Mix</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by LeeAnne</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£9.85</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/vegan3.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Hawaiian Salad</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Helena Jane</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£12.59</p>
+					</a>
+					<a href="#"></a>
+				</li>
+    </ul>
+	</div>
+
+
+	<!--- collapsible 4-->
+	<div data-role="collapsible" data-collapsed="true">
+    <h4>Italian</h4>
+    <ul data-role="listview">
+        <li><a href="#">
+					<img src="images/italian1.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Bruschetta by Giovanni </h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Giovanni Zarella P.</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£8.59</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/italian2.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Tortellini Salad</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Gin Luisa</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£6.60</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/italian3.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Egg & Shrimp</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Gin Luisa</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£12.59</p>
+					</a>
+					<a href="#"></a>
+				</li>
+    </ul>
+	</div>
+
+
+	<!--- collapsible 5-->
+	<div data-role="collapsible" data-collapsed="true">
+    <h4>Halal</h4>
+    <ul data-role="listview">
+        <li><a href="#">
+					<img src="images/halal1.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Pizza Magharita Halal</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Can</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£8.59</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/halal2.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Fresh Beef Burger</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Mina L.</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£7.40</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/halal3.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Yaprak Sarma</h4>
+					<p style="font-size:16px;">Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</p>
+					<p style="font-size:14px;font-weight:bold;">by Frey & Lapo</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£8.59</p>
+					</a>
+					<a href="#"></a>
+				</li>
+    </ul>
+	</div>
+	</div>
+	</ul>
+	<a href="#favourites" class="ui-btn ui-shadow "style="background-color:#; width:175px;border-radius:10px;margin-left:20px;"><span class="ui-icon-bullets ui-btn-icon-left">My Favourites</a>
+</div>
+
+
+	
+	<!-- END OF HOME PAGE -->
+
+
+
+
+
+<!-- START OF BURGER PAGE-->
+
+	<div data-role="page" id="Burger"> 
+	<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		<h1 style="text-align: center;font-size:25px;">Beef Cheese Burger</h1>
+	</div>
+	
+	
+	<div role="main" class="ui-content">
+		
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="max-width:500px"><img src="images/burger.jpg">
+	
+	<br>Beef Cheese Burger<br><p style="font-size:28px;-webkit-text-stroke: .1px #4361EE;">£8.59</p>
+	 <br> <br>
+	
+		<a href="#Order" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#5125B7;">Order now</a>
+		<a href="#" button id="addbasket" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#5125B7;">Add to basket</a>
+		<br>
+ <br> 
+<!-- Add to favourites-->
+		  <fieldset data-role="controlgroup" data-type="horizontal">
+              <input type="checkbox" name="favouriteBurger" id="favouriteBurger" class="custom" >
+              <label for="favouriteBurger" style="width:175px;"><span class="ui-icon-star ui-btn-icon-left">Add to faves</span></label>
+		   </fieldset>
+		  
+<!-- Add to favourites END -->
+<a href="#favourites" class="ui-btn ui-shadow "style="background-color:#; width:175px;border-radius:10px;"><span class="ui-icon-bullets ui-btn-icon-left">View Favourites</a>
+
+
+   </div></div>
+    <div class="ui-block-b" ><div style="top: -30px;"class="ui-bar ui-bar-a" style="max-width:500px"><p><i>"Hello neighbors! I’m offering these delicious burgers, served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese."</i> <br><br><i>Also available in vegan!</i> <br><br><br>
+	<a href="#Allergens" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">View allergens</a>
+	<a href="#Message" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">Message Laila</a>
+	<a href="#Page4" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">View on map</a>
+
+	<br><p style="font-size:15px;"><img src="images/laila.jpg" style="width:44px;border-radius: 50%;"> by Laila S. | added 1h ago | 1km away | Collection only</p>
+</p></div></div>
+</div><!-- /grid-a -->
+		<br>
+
+	
+
+
+<!--- NAVBAR -->
+    <div data-role="footer" data-position="fixed">
+			
+	<nav data-role="navbar">
+      <ul>
+       <li><a href="#Page1" style="font-family:Trirong;"class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+       <li><a href="#" style="font-family:Trirong;"class="ui-btn ui-icon-location ui-btn-icon-top" target="_blank">Map</a></li>
+	   <li><a href="#" style="font-family:Trirong;" class="ui-btn ui-icon-user ui-btn-icon-top">Profile</a></li>
+	   <li><a href="#Intro" data-transition="flip"style="font-family:Trirong;" class="ui-btn ui-icon-info ui-btn-icon-top">Intro</a></li>
+	
+     </ul>
+     </nav>		
+	</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+	<!--- END NAVBAR -->
+<!-- END OF BURGER PAGE-->
+
+
+
+
+
+
+
+
+
+<!-- START OF HOT DOG PAGE-->
+
+	
+	<div data-role="page" id="Hotdog"> 
+	<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		<h1 style="text-align: center;font-size:25px;">Truffle Hot Dog</h1>
+	</div>
+	
+	
+	<div role="main" class="ui-content">
+		
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="max-width:500px"><img src="images/hotdog.jpg">
+	
+	<br>Truffle Hot Dog<br><p style="font-size:28px;-webkit-text-stroke: .1px #4361EE;">£6.29</p>
+	 <br> <br>
+	
+		<a href="#Order" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#5125B7;">Order now</a>
+		<a href="#" button id="addbasket2" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#5125B7;">Add to basket</a>
+		<br>
+ <br> 
+<!-- Add to favourites-->
+		  <fieldset data-role="controlgroup" data-type="horizontal">
+              <input type="checkbox" name="favouriteHotdog" id="favouriteHotdog" class="custom" >
+              <label for="favouriteHotdog" style="width:175px;"><span class="ui-icon-star ui-btn-icon-left">Add to faves</span></label>
+		   </fieldset>
+		  
+<!-- Add to favourites END -->
+<a href="#favourites" class="ui-btn ui-shadow "style="background-color:#; width:175px;border-radius:10px;"><span class="ui-icon-bullets ui-btn-icon-left">View Favourites</a>
+
+
+   </div></div>
+    <div class="ui-block-b" ><div style="top: -30px;"class="ui-bar ui-bar-a" style="max-width:500px"><p><i>"Hi! :) I’m offering these delicious hot dogs, served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese."</i> <br><br><i>Also available in vegan!</i> <br><br><br>
+	<a href="#Allergens" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">View allergens</a>
+	<a href="#Message" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">Message LenJen</a>
+	<a href="#Page4" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">View on map</a>
+
+	<br><p style="font-size:15px;"><img src="images/lenjen.jpg" style="width:44px;border-radius: 50%;"> by LenJen | added 20 minutes ago | 3km away | Collection + Order possible</p>
+</p></div></div>
+</div><!-- /grid-a -->
+		<br>
+
+	
+
+
+<!--- NAVBAR -->
+    <div data-role="footer" data-position="fixed">
+			
+	<nav data-role="navbar">
+      <ul>
+       <li><a href="#Page1" style="font-family:Trirong;"class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+       <li><a href="#" style="font-family:Trirong;"class="ui-btn ui-icon-location ui-btn-icon-top" target="_blank">Map</a></li>
+	   <li><a href="#" style="font-family:Trirong;" class="ui-btn ui-icon-user ui-btn-icon-top">Profile</a></li>
+	   <li><a href="#Intro" data-transition="flip"style="font-family:Trirong;" class="ui-btn ui-icon-info ui-btn-icon-top">Intro</a></li>
+	
+     </ul>
+     </nav>		
+	</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+	<!--- END NAVBAR -->
+<!-- END OF HOT DOG PAGE-->
+
+
+
+
+
+
+
+
+<!-- START OF PIZZA PAGE-->
+
+		<div data-role="page" id="Pizza"> 
+	<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		<h1 style="text-align: center;font-size:25px;">Classic Pizza</h1>
+	</div>
+	
+	
+	<div role="main" class="ui-content">
+		
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="max-width:500px"><img src="images/pizza.jpg">
+	
+	<br>Classic Pizza<br><p style="font-size:28px;-webkit-text-stroke: .1px #4361EE;">£10.40</p>
+	 <br> <br>
+	
+		<a href="#Order" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#5125B7;">Order now</a>
+		<a href="#" button id="addbasket3" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#5125B7;">Add to basket</a>
+		<br>
+ <br> 
+<!-- Add to favourites-->
+		  <fieldset data-role="controlgroup" data-type="horizontal">
+              <input type="checkbox" name="favouritePizza" id="favouritePizza" class="custom" >
+              <label for="favouritePizza" style="width:175px;"><span class="ui-icon-star ui-btn-icon-left">Add to faves</span></label>
+		   </fieldset>
+		  
+<!-- Add to favourites END -->
+<a href="#favourites" class="ui-btn ui-shadow "style="background-color:#; width:175px;border-radius:10px;"><span class="ui-icon-bullets ui-btn-icon-left">View Favourites</a>
+
+
+   </div></div>
+    <div class="ui-block-b" ><div style="top: -30px;"class="ui-bar ui-bar-a" style="max-width:500px"><p><i>"Hey everyone!! I’m offering these delicious burgers, served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.."</i> <br><br><i>Also available in vegan!</i> <br><br><br>
+	<a href="#Allergens" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">View allergens</a>
+	<a href="#Message" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">Message Matt K.</a>
+	<a href="#Page4" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">View on map</a>
+
+	<br><p style="font-size:15px;"><img src="images/seller2.jpg" style="width:44px;border-radius: 50%;"> by Matt K. | added 2h ago | 1.8km away | Collection + Order possible</p>
+</p></div></div>
+</div><!-- /grid-a -->
+		<br>
+
+	
+
+
+<!--- NAVBAR -->
+    <div data-role="footer" data-position="fixed">
+			
+	<nav data-role="navbar">
+      <ul>
+       <li><a href="#Page1" style="font-family:Trirong;"class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+       <li><a href="#" style="font-family:Trirong;"class="ui-btn ui-icon-location ui-btn-icon-top" target="_blank">Map</a></li>
+	   <li><a href="#" style="font-family:Trirong;" class="ui-btn ui-icon-user ui-btn-icon-top">Profile</a></li>
+	   <li><a href="#Intro" data-transition="flip"style="font-family:Trirong;" class="ui-btn ui-icon-info ui-btn-icon-top">Intro</a></li>
+	
+     </ul>
+     </nav>		
+	</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+	<!--- END NAVBAR -->
+<!-- END OF PIZZA PAGE-->
+
+
+
+
+
+
+
+	<!-- /Start Allergens -->
+	<div data-role="page" id="Allergens"  data-dialog="true"> 
+		<div data-role="header"><h1>Allergens</h1>
+		</div>
+		
+		<div role="main" class="ui-content"> Contains: Celery,  Gluten, Molluscs, Mustard Nuts and Peanuts Sesame.
+
+	
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+	
+			<div class="grid-item grid-item-2"><img src="images/logo.png" style="width:100px;margin-top:20px;padding-left:1px;margin-bottom:20px;"></div>
+	</div>
+	</div>
+	</div>
+	<!-- END OF Allergens-->	
+
+
+
+	
+	<!-- /Start Message Seller -->
+	<div data-role="page" id="Message"  data-dialog="true"> 
+		<div data-role="header"><h1>Message Seller</h1>
+
+		<div class="container">
+		<fieldset id="hiddenFieldset">
+			<div class="ui-field-contain">
+				<label for="inputBox">Your message:</label>
+				<input type="text" name="inputBox" id="inputBox" placeholder="Text input" value="">
+			</div>	
+			<button id="send" type="button">Send</button>
+			
+		</fieldset>
+		</div>
+		</div>
+		</div>
+		
+		
+	<!-- END Message Seller-->
+
+
+
+<!-- START OF ORDER PAGE (BURGER)-->
+
+	<div data-role="page" id="Order"> 
+	<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		<h1 style="text-align: center;font-size:25px;">Summary</h1>
+	</div>
+	<div role="main" class="ui-content">
+
+	<div data-role="collapsible" data-collapsed="false">
+    <h4>Summary</h4>
+    <ul data-role="listview">
+        <li><a href="#">
+						<img src="images/burger.jpg" style="size:30px;" class="ui-li-thumb">
+					<h4>Beef Cheese Burger</h4>
+					<p style="font-size:16px;"><i>Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</i></p>
+					<p style="font-size:14px;font-weight:bold;">QTY: 1 | 1km away | Collection only</p>
+					<p style="font-size:14px;font-weight:bold;">by Laila Sweeney</p>
+					<p class="ui-li-aside" style="font-size:20px;font-weight:bold;">£8.59</p>
+					</a>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">
+					<img src="images/ramen3.jpg" style="padding-left:-15px;" class="ui-li-thumb">
+					<h4>Ramen Shrimp Mix</h4>
+					<p style="font-size:16px;"><i>Served in a brioche bun, iceberg lettuce vine tomato topped with american burger cheese.</i></p>
+					<p style="font-size:14px;font-weight:bold;">QTY: 3 | 1km away | Collection only</p>
+					<p style="font-size:14px;font-weight:bold;">by Laila Sweeney</p>
+					<p class="ui-li-aside" style="font-size:20px;font-weight:bold;">£30.95</p>
+					</a>
+					<a href="#"></a>
+				</li>
+			</ul>
+</div>
+
+				<img src="images/map.png">
+				<br>
+				<br>
+	<a href="#Next" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">39.90 - Next </a>
+
+
+<!--- NAVBAR -->
+    <div data-role="footer" data-position="fixed">
+			
+	<nav data-role="navbar">
+      <ul>
+       <li><a href="#Page1" style="font-family:Trirong;"class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+       <li><a href="#" style="font-family:Trirong;"class="ui-btn ui-icon-location ui-btn-icon-top" target="_blank">Map</a></li>
+	   <li><a href="#" style="font-family:Trirong;" class="ui-btn ui-icon-user ui-btn-icon-top">Profile</a></li>
+	   <li><a href="#Intro" data-transition="flip"style="font-family:Trirong;" class="ui-btn ui-icon-info ui-btn-icon-top">Intro</a></li>
+	
+     </ul>
+     </nav>		
+	</div>
+	</div>
+	</div>
+	</div>
+	<!--- END NAVBAR -->
+
+<!-- END OF ORDER PAGE-->
+
+
+
+
+
+
+<!-- START OF NEXT(PAYMENT) PAGE-->
+
+	<div data-role="page" id="Next"> 
+	<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		<h1 style="text-align: center;font-size:25px;">Checkout</h1>
+	</div>
+	<div role="main" class="ui-content">
+
+	 <p style="text-align: center;font-size:20px;">
+		Collection Address <br>Laila Sydney<br>
+Weymouth Terrace<br>
+London E2 8LS <br>T: +44 9843512897 </p>
+
+				<img src="images/map.png">
+				<br>
+				<br>
+
+		<!-- Choose payment-->
+		<fieldset data-role="controlgroup">
+    <legendp style="text-align: center;">Payment type (Credit Card only accepted this user)</legend>
+        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+        <label for="radio-choice-1">Credit/Debit Card</label>
+        <input disabled="disabled" type="checkbox" name="checkbox-v-1a" id="checkbox-v-1a">
+        <label for="checkbox-v-1a">Apple Pay</label>
+         <input disabled="disabled" type="checkbox" name="checkbox-v-1c" id="checkbox-v-1c">
+        <label for="checkbox-v-1c">Paypal</label>
+  
+</fieldset>
+
+<p style="text-align: center;font-size:20px;">
+			Total - 39.90 </p>
+	<a href="./payment.html"  id="Payment" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;"> Next </a>
+
+
+<!--- NAVBAR -->
+    <div data-role="footer" data-position="fixed">
+			
+	<nav data-role="navbar">
+      <ul>
+       <li><a href="#Page1" style="font-family:Trirong;"class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+       <li><a href="#" style="font-family:Trirong;"class="ui-btn ui-icon-location ui-btn-icon-top" target="_blank">Map</a></li>
+	   <li><a href="#" style="font-family:Trirong;" class="ui-btn ui-icon-user ui-btn-icon-top">Profile</a></li>
+	   <li><a href="#Intro" data-transition="flip"style="font-family:Trirong;" class="ui-btn ui-icon-info ui-btn-icon-top">Intro</a></li>
+	
+     </ul>
+     </nav>		
+	</div>
+	</div>
+	</div>
+</div>
+
+	<!--- END NAVBAR -->
+<!-- END OF NEXT (PAYMENT) PAGE-->
+
+
+
+
+
+	
+
+
+	<!-- Favourites page  -->
+	<div data-role="page" id="favourites">
+		<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		 <h1 style="font-size: 35px;" a href="#Intro">HoCo</h1>
+	</div>
+     
+     
+      
+	  <div role="main" class="ui-content"> <!-- main contain-->
+		
+	   <h1 style="font-size: 25px;text-align: center">My Favourites</h1>
+	   	<a href="#email" class="ui-btn ui-shadow "style="font-family:Trirong;background-color:#4361EE;">Send your favorites to mail</a>
+      
+          
+          <div id="favourite-content"><p>My favourites: </p></div>
+          
+      </div> <!-- end main contain-->
+      
+      <div data-role="footer" data-position="fixed"> <!-- footer-->
+		<h1></h1>
+
+
+		 <div data-role="footer" data-position="fixed">	
+	<nav data-role="navbar">
+      <ul>
+       <li><a href="#Page1" style="font-family:Trirong;"class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+       <li><a href="#" style="font-family:Trirong;"class="ui-btn ui-icon-location ui-btn-icon-top" target="_blank">Map</a></li>
+	   <li><a href="#" style="font-family:Trirong;" class="ui-btn ui-icon-user ui-btn-icon-top">Profile</a></li>
+	   <li><a href="#Intro" data-transition="flip"style="font-family:Trirong;" class="ui-btn ui-icon-info ui-btn-icon-top">Intro</a></li>
+	
+     </ul>
+     </nav>		
+	</div>
+	  </div>
+	  </div>
+      </div>
+	 </div> <!-- end of favourites-->
+
+
+
+	 <!-- START OF EMAIL -->
+
+	<div data-role="page" id="email"> 
+	<div data-role="header">
+		<a data-rel="back" style="font-family:Trirong;">Back</a>
+		<h1 style="text-align: center;font-size:25px;">Send to email</h1>
+	</div>
+	<div role="main" class="ui-content">
+
+   
+     <h1>Send your favorites via mail!</h1>
+    <div class="container">
+        <form onsubmit="return false">
+            <div class="form-item">
+                <label for="">Name: </label><br>
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            
+            <div class="form-item">
+                <label for="">Email: </label><br>
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-item">
+                <label for="">Message</label><br>
+                <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+
+            </div>
+            <button id="mailbtn">Send Email</button>
+
+        </form>
+    </div>
+<!--- NAVBAR -->
+    <div data-role="footer" data-position="fixed">
+			
+	<nav data-role="navbar">
+      <ul>
+       <li><a href="#Page1" style="font-family:Trirong;"class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+       <li><a href="#" style="font-family:Trirong;"class="ui-btn ui-icon-location ui-btn-icon-top" target="_blank">Map</a></li>
+	   <li><a href="#" style="font-family:Trirong;" class="ui-btn ui-icon-user ui-btn-icon-top">Profile</a></li>
+	   <li><a href="#Intro" data-transition="flip"style="font-family:Trirong;" class="ui-btn ui-icon-info ui-btn-icon-top">Intro</a></li>
+	
+     </ul>
+     </nav>		
+	</div>
+	</div>
+	</div>
+	</div>
+	<!--- END NAVBAR -->
+
+<!-- END OF EMAIL-->
+	 
+	 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+	 <script>
+
+  let faves = document.getElementById("favourite-content").innerHTML;
+
+	 // hotdog code 
+		
+	 $(document).on( 'pagecontainerbeforehide', 'body', function( event, ui){
+	   //do something
+	   if ( ui.nextPage.attr('id')== "favourites") {
+		   $("#favourite-content").html ("");
+		    if ($( "#favouriteHotdog" ).is( ":checked" )) {
+				$("#favourite-content").append(
+
+
+					` 
+						<ul data-role="listview" data-filter="true"style="font-family:Trirong;" data-filter-placeholder="Browse dishes..." data-inset="true" >
+		
+	<div data-role="collapsible" data-collapsed="true">		          
+   
+    <ul data-role="listview">
+            <li><a href="#Hotdog" style="color: inherit;">
+					<img src="images/hotdog.jpg" style="width:250px;" class="ui-li-thumb">
+					
+					<h4>Truffle Hot Dog</h4>			
+				
+					<p style="font-size:14px;font-weight:bold;">by Len Jen</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£6.29</p>
+					
+					
+				</li>
+`
+				);
+			}   
+		
+
+		   // burger code 
+		 
+		    if ($( "#favouriteBurger" ).is( ":checked" )) {
+				$("#favourite-content").append(
+
+
+					` 
+						<ul data-role="listview" data-filter="true"style="font-family:Trirong;" data-filter-placeholder="Browse dishes..." data-inset="true" >
+		
+	<div data-role="collapsible" data-collapsed="true">		          
+   
+   <ul data-role="listview">
+            <li><a href="#Burger" style="color: inherit;">
+					<img src="images/burger.jpg" style="width:250px;" class="ui-li-thumb">
+					
+					<h4>Beef Cheese Burger</h4>			
+				
+					<p style="font-size:14px;font-weight:bold;">by Laila Sweeney</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£8.59</p>
+					
+					
+			
+		   		
+              </li>
+				   
+		
+		
+`
+				);
+			}   
+			   // pizza code 
+
+			 if ($( "#favouritePizza" ).is( ":checked" )) {
+				$("#favourite-content").append(
+
+
+					` 
+						<ul data-role="listview" data-filter="true"style="font-family:Trirong;" data-filter-placeholder="Browse dishes..." data-inset="true" >
+		
+	<div data-role="collapsible" data-collapsed="true">		          
+   
+    <ul data-role="listview">
+            <li><a href="#Pizza" style="color: inherit;">
+					<img src="images/pizza.jpg" style="width:250px;" class="ui-li-thumb">
+					
+					<h4>Classic Pizza</h4>			
+				
+					<p style="font-size:14px;font-weight:bold;">by Len Jen</p>
+					<p class="ui-li-aside" style="font-size:18px;font-weight:bold;">£6.29</p>
+					
+					
+				</li>
+`
+				);
+			}   
+		    
+     }   
+
+
+  });
+
+console.log(faves)
+
+
+const btnMail = document.getElementById('mailbtn');
+const input = document.querySelector('form');
+btnMail.addEventListener('click', () => {
+  const name = input.elements['name'].value.trim();
+  const email = input.elements['email'].value.trim();
+  const msg = input.elements['message'].value.trim();
+  let faves = document.getElementById('favourite-content').innerHTML;
+  
+  if (
+    !name.length > 0 ||
+    !email.length > 0 
+  ) {
+    alert('All fields are mandatory');
+    return;
+  }
+  Email.send({
+    Host: 'smtp.mailtrap.io',
+    Username: '46c87c43bffd6d',
+    Password: '4c150cd11bc68f',
+    To: 'ss@dd.com',
+    From: email,
+    Subject: 'Your favorite HoCo meals!',
+    Body: msg + '<br>' + name + '<br>'  + faves,
+  }).then((msg) => alert('The email was successfully sent'));
+});
+
+	    
+	
+
+	   
+     </script>
+</body>
+
+</html>
