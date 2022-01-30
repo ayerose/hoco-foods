@@ -1,7 +1,7 @@
 # hoco-foods
-UX project for university
+UX project for university (view in minimized window)
 
-
+Intro:
 Home cooked food for everyone by everyone
 
 Join milions of neighbors all over the world who are using HoCo to offer their home cooked meals or order fresh homemade meals!
