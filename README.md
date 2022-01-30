@@ -1,5 +1,5 @@
 # hoco-foods
-UX project for university (view in minimized window)
+UX project for university  with focus on jquery mobile (view in minimized window)
 
 Intro:
 Home cooked food for everyone by everyone
